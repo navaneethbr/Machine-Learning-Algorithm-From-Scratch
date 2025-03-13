@@ -65,7 +65,7 @@ if __name__ == "__main__":
     # prediction from the model we built 
     our_model = SimpleLinearRegression()
     
-    df = pd.read_csv("/Users/navaneeth/Documents/Work/Machine Learning from Scratch/Dataset/Student_Performance.csv")
+    df = pd.read_csv("/Users/navaneeth/Documents/Work/MACHINE_LEARNING_FROM_SCRATCH/dataset/Student_Performance.csv")
     
     X_train, y_train, X_test, y_test = np.array(df.loc[:901, "Hours Studied"]), np.array(df.loc[:901, "Performance Index"]), np.array(df.loc[901:,'Hours Studied']), np.array(df.loc[901:, "Performance Index"])
     
